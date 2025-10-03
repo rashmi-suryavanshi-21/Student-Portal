@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Portal</title>
+  <link rel="stylesheet" href="portal.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-left">
+      <div class="logo">
+        <span class="mark">SP</span>
+        <div>
+          Student Portal
+          <small>Learn • Build • Grow</small>
+        </div>
+      </div>
+    </div>
+
+    <!--  search  -->
+    <div class="header-center" aria-hidden="false">
+      <div class="search" role="search">
+        <span class="hint">🔎</span>
+        <input type="search" placeholder="Search courses, topics or instructors..." aria-label="Search courses">
+        <span class="hint">Press Enter</span>
+      </div>
+    </div>
+
+
+    <div class="header-right">
+      <div class="auth-pill" role="navigation">
+
+        <!-- profile  -->
+        <div style="display:flex;align-items:center;gap:8px;padding-left:8px;">
+          <div class="avatar" aria-hidden="true">R</div>
+          <div class="profile-name">Student</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <div class="page-title">
+      <div>
+        <h1>Available Courses</h1>
+        <div class="page-sub">Choose from front-end, back-end and database courses — start learning now.</div>
+      </div>
+      <div class="page-actions">
+
+        <a href="#feedback" style="text-decoration:none"><span
+            style="background:#fff;padding:8px 12px;border-radius:8px;font-weight:700;color:var(--primary)">Give
+            Feedback</span></a>
+      </div>
+    </div>
+
+    <!-- COURSES GRID-->
+    <section class="courses" aria-label="Courses list">
+      <!-- HTML -->
+      <article class="course">
+        <div class="course-media" style="background-image:linear-gradient(135deg, #f39c12 0%, #f1c40f 100%);">HTML</div>
+        <div class="course-body">
+          <h3>HTML Fundamentals</h3>
+          <div class="meta">Beginner • 3 weeks</div>
+          <p>Learn the structure of the web: tags, elements, forms and semantic HTML to build accessible pages.</p>
+          <div class="badges">
+            <span class="badge">Beginner</span>
+            <span class="badge">HTML Basics</span>
+          </div>
+          <div style="margin-top:12px">
+            <a class="start-btn" href="#start-html">Start Course</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- CSS -->
+      <article class="course">
+        <div class="course-media" style="background-image:linear-gradient(135deg,#3498db,#9b59b6);">CSS</div>
+        <div class="course-body">
+          <h3>CSS & Layouts</h3>
+          <div class="meta">Beginner → Intermediate • 4 weeks</div>
+          <p>Master styling, Flexbox, Grid, responsive design and animations to make beautiful interfaces.</p>
+          <div class="badges">
+            <span class="badge">Responsive</span>
+            <span class="badge">Flexbox & Grid</span>
+          </div>
+          <div style="margin-top:12px">
+            <a class="start-btn" href="#start-css">Start Course</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- JavaScript -->
+      <article class="course">
+        <div class="course-media" style="background-image:linear-gradient(135deg,#e4c088,#a76934);">JS</div>
+        <div class="course-body">
+          <h3>JavaScript Basics</h3>
+          <div class="meta">Beginner • 6 weeks</div>
+          <p>Understand variables, functions, DOM, events and asynchronous programming to add interactivity.</p>
+          <div class="badges">
+            <span class="badge">ES6</span>
+            <span class="badge">DOM</span>
+          </div>
+          <div style="margin-top:12px">
+            <a class="start-btn" href="#start-js">Start Course</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- React -->
+      <article class="course">
+        <div class="course-media" style="background-image:linear-gradient(135deg,#61dafb,#336886);">ReactJS</div>
+        <div class="course-body">
+          <h3>React.js</h3>
+          <div class="meta">Intermediate • 6 weeks</div>
+          <p>Build component-based web apps, learn JSX, state, props, hooks and routing with practical projects.</p>
+          <div class="badges">
+            <span class="badge">Components</span>
+            <span class="badge">Hooks</span>
+          </div>
+          <div style="margin-top:12px">
+            <a class="start-btn" href="#start-react">Start Course</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Node.js -->
+      <article class="course">
+        <div class="course-media" style="background-image:linear-gradient(135deg,#50c982,#1b6038);">NodeJS</div>
+        <div class="course-body">
+          <h3>Node.js</h3>
+          <div class="meta">Intermediate • 5 weeks</div>
+          <p>Server-side JavaScript: build APIs, understand Express, middleware and work with databases.</p>
+          <div class="badges">
+            <span class="badge">Backend</span>
+            <span class="badge">APIs</span>
+          </div>
+          <div style="margin-top:12px">
+            <a class="start-btn" href="#start-node">Start Course</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- SQL -->
+      <article class="course">
+        <div class="course-media" style="background-image:linear-gradient(135deg,#95a5a6,#134b4f);">SQL</div>
+        <div class="course-body">
+          <h3>SQL & Databases</h3>
+          <div class="meta">Beginner • 4 weeks</div>
+          <p>Learn relational databases, queries, joins, normalization and how to design a schema.</p>
+          <div class="badges">
+            <span class="badge">Databases</span>
+            <span class="badge">Queries</span>
+          </div>
+          <div style="margin-top:12px">
+            <a class="start-btn" href="#start-sql">Start Course</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- MongoDB -->
+      <article class="course">
+        <div class="course-media" style="background-image:linear-gradient(135deg,#74d865,#0b8b0b);">MongoDB</div>
+        <div class="course-body">
+          <h3>MongoDB (NoSQL)</h3>
+          <div class="meta">Beginner • 4 weeks</div>
+          <p>Understand document databases, CRUD operations, aggregation and when to use NoSQL.</p>
+          <div class="badges">
+            <span class="badge">NoSQL</span>
+            <span class="badge">Aggregation</span>
+          </div>
+          <div style="margin-top:12px">
+            <a class="start-btn" href="#start-mongo">Start Course</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Next.js -->
+      <article class="course">
+        <div class="course-media" style="background-image:linear-gradient(135deg,#818adb,#03335e);">NextJS</div>
+        <div class="course-body">
+          <h3>Next.js</h3>
+          <div class="meta">Intermediate • 5 weeks</div>
+          <p>Server-side rendering, static generation and fullstack apps with Next.js and React.</p>
+          <div class="badges">
+            <span class="badge">SSR</span>
+            <span class="badge">SSG</span>
+          </div>
+          <div style="margin-top:12px">
+            <a class="start-btn" href="#start-next">Start Course</a>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- Feedback Section -->
+  <section id="feedback" aria-label="Feedback form">
+    <h2>Feedback</h2>
+    <p class="page-sub">Your suggestions help us improve. (This is a static form — for demo/assignment purposes.)</p>
+
+    <form action="#" method="post" onsubmit="return false;">
+      <label for="course-name">Course Name</label>
+      <input id="course-name" name="course" placeholder="e.g. React.js" />
+
+      <label for="rating">Rating</label>
+      <select id="rating" name="rating">
+        <option>5 - Excellent</option>
+        <option>4 - Good</option>
+        <option>3 - Average</option>
+        <option>2 - Poor</option>
+        <option>1 - Very Poor</option>
+      </select>
+
+      <label for="comments">Comments</label>
+      <textarea id="comments" name="comments" rows="5" placeholder="Write your feedback..."></textarea>
+
+
+      <button class="submit">Submit Feedback</button>
+    </form>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <strong>Student Portal</strong>
+        <div style="color:rgba(255,255,255,0.85);font-size:13px">Learn • Build • Grow</div>
+      </div>
+
+      <div class="footer-links" aria-label="Footer links">
+        <a href="#reviews">Reviews</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#feedback">Feedback</a>
+      </div>
+
+      <div style="color:rgba(255,255,255,0.85)">&copy; 2025 Student Portal</div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
