@@ -18,7 +18,7 @@
     }
 
     /* ===== HEADER ===== */
-    header{
+    .header-inner{
       background:linear-gradient(0deg, rgba(44,62,80,1), rgba(44,62,80,1));
       color:white;
       padding:14px 28px;
@@ -259,3 +259,14 @@
       cursor:pointer;
     }
 
+    @media (max-width:726px){
+      header,footer {width: 100vw; }
+      .courses{padding: 10px;grid-template-columns: 1fr;}
+      .header-center{display: none; flex-wrap: wrap;}
+      .footer-inner{justify-content: center;}
+      .page-title{flex-direction: column;justify-content: left;align-items: left;}
+    }
+    @media (min-width:726px) and (max-width:1180px){
+      .search{opacity: 1;}
+      .courses{grid-template-columns:1fr 1fr}
+    }
